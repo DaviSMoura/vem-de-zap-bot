@@ -1,0 +1,22 @@
+{
+  "name": "vem-de-zap-bot",
+  "version": "0.0.1",
+  "description": "Twitter Bot that add some emojis to any tweet",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaviSMoura/vem-de-zap-bot.git"
+  },
+  "author": "Davi Moura & Gabriel Braga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaviSMoura/vem-de-zap-bot/issues"
+  },
+  "homepage": "https://github.com/DaviSMoura/vem-de-zap-bot#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
