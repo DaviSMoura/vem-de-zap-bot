@@ -26,7 +26,7 @@ async function onData(tweet) {
 
       const originalText = (tweetOrig[0].full_text || tweetOrig[0].text).replace(new RegExp(/(?<=^|\s)(@[\w.]+)(?<!\.) /gi), '')
       await tweetar({
-        status: `@${tweet.user.screen_name} ${zappp(originalText)}`.substring(0,279),
+        status: `@${tweet.user.screen_name} ${zappp(originalText)}`.substring(0,270),
         in_reply_to_status_id: tweet.id_str
       })
     })
