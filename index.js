@@ -19,6 +19,7 @@ async function main() {
 
 async function onData(tweet) {
   if (tweet.in_reply_to_status_id) {
+    if (tweet.in_reply_to_screen_name === process.env.botMention) return
     await client.get('statuses/lookup', { id: tweet.in_reply_to_status_id_str, tweet_mode: 'extended' }, async (err,tweetOrig) => {
       if (err) {
         return console.error(err)
